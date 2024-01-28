@@ -1,4 +1,4 @@
-//const=바뀌지 않는 값 (계속 유지됨)
+//const=바뀌지 않는 값 (변수명임) (계속 유지됨)
 const a=5;
 const b=2;
 const myName="yena";

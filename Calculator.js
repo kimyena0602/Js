@@ -1,23 +1,23 @@
 const calculator = {
     plus: function (a,b){
-        alert(a+b); //console.log 말고 alert로 주면 값이 하나씩 나옴
+        return a+b;
     },
     minus: function (a,b){
-        alert(a-b);
+        return a-b;
     },
     times: function(a,b){
-        alert(a*b);
+        return a*b;
     },
     divide: function(a,b){
-        alert(a/b);
+        return a/b;
     },
     power: function (a,b) {
-        alert(a**b);
+        return a**b;
     },
 };
 
-calculator.plus(2,3);
-calculator.times(2,3);
-calculator.minus(2,3);
-calculator.divide(2,3);
-calculator.power(2,3);
+const plusResult = calculator.plus(2,3);
+const minusResult = calculator.times(plusResult,10);
+const timesResult = calculator.minus(10,minusResult);
+const divideResult = calculator.divide(timesResult,plusResult);
+const powerResult = calculator.power(divideResult,minusResult);

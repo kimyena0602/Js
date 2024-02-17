@@ -1,32 +1,12 @@
-const h1 = document.querySelector("div.hello:first-child h1");
+const loginForm = document.querySelector("#login-form inout");
+const loginButton = document.querySelector("#login-form button");
 
-function handleTitleClick(){
-    const clickedClass = "clicked";
-    if(h1.classList.contains (clickedClass)){
-        h1.classList.remove(clickedClass);
-    } else{
-        h1.classList.add(clickedClass);
+function onLoginBtnClick(){
+    const username = loginInput.value;
+    if(username === ""){
+        alert("Please write your name.");
+    } else if (username.length>15){
+        alert ("Your name is too long.")
     }
 }
-
-function handleWindowResize(){
-}
-
-function handleWindowCopy(){
-    alert("copier!");
-}
-
-function handleWindowOffline(){
-    alert("No WIFI");
-}
-
-function handleWindowOnline(){
-    alert("Nice~!");
-}
-
-h1.onclick = handleTitleClick;
-
-window.addEventListener("resize", handleWindowResize); //resize는 h1은 안됨. 
-window.addEventListener("copy", handleWindowCopy);
-window.addEventListener("offline", handleWindowOffline);
-window.addEventListener("online", handleWindowOnline);
+loginButton.addEventListener("click", onLoginBtnClick);

@@ -1,8 +1,14 @@
-const h1     = document.querySelector("div.hello:first-child h1");
+const h1 = document.querySelector("div.hello:first-child h1");
 
 function handleTitleClick(){
-    console.log ("title was clicked!");
-    h1.style.color = "black"
+    const currentColor = h1.style.color;
+    let newColor;
+    if(currentColor==="black"){
+        newColor = "tomato";
+    } else {
+        newColor = "black";
+    }
+    h1.style.color = newColor;
 }
 
 function handleMouseEnter (){

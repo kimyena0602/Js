@@ -8,7 +8,7 @@ function onLoginSubmit(event){
      event.preventDefault(); // preventDefault 함수란 어떤 event의 기본 행동이 발생되지 않도록 막는 함수
      loginForm.classList.add(HIDDEN_CLASSNAME);
      const username = loginInput.value;
-     greeting.innerText = "Hello " + username
+     greeting.innerText = "Hello " + username 
      greeting.classList.remove(HIDDEN_CLASSNAME)
 }
 
